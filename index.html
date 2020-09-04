@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <script src="https://kit.fontawesome.com/813b56c442.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/desktop.css" />
         <link rel="stylesheet" href="./css/mobile.css" />
@@ -19,26 +20,55 @@
                 <nav>
                     <ul id="main_nav">
                         <li class="actived-nav"><a href="#lodging">Hébergements</a></li>
-                        <li><a href="#activities">Activités</a></li>
+                        <li><a href="#activities" class="text-grey">Activités</a></li>
                     </ul>
                 </nav>
             </header>
             <!------------------------>
             <main class="px-3">
                 <h1 id="lodging" class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <h4 class="text-gray">En plein centre ville ou en pleine nature</h4>
-                <form action="#" method="get">
+                <h4 class="text-grey">En plein centre ville ou en pleine nature</h4>
+                <form action="#" method="get" class="flex">
+                    <div class="bg-grey flex-column centerall">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
                     <input type="text" id="location" name="location" value="Marseille, France">
-                    <input type="submit" value="Rechercher">
+                    <button type="submit" class="bg-blue">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </form>
-                <p>Filtres</p>
-                <ul>
-                    <li>Économique</li>
-                    <li>Familial</li>
-                    <li>Romantique</li>
-                    <li>Animaux autorisés</li>
+                <p class="title">Filtres</p>
+                <ul class="flex flex-wrap">
+                    <li class="flex centerall filter">
+                        <div class="bg-blue-light flex-column centerall disc">
+                            <i class="fas fa-money-bill-wave text-blue fontsize-2-5"></i>
+                        </div>
+                        <p class="fontsize-2-5 filter flex-column centerall m1">Économique</p>
+                    </li>
+                    <li class="flex centerall filter">
+                        <div class="bg-blue-light flex-column centerall disc">
+                            <i class="fas fa-child text-blue fontsize-2-5"></i>
+                        </div>
+                        <p class="fontsize-2-5 filter flex-column centerall m1">Familial</p>
+                    </li>
+                    <li class="flex centerall filter">
+                        <div class="bg-blue-light flex-column centerall disc">
+                            <i class="fas fa-heart text-blue fontsize-2-5"></i>
+                        </div>
+                        <p class="fontsize-2-5 filter flex-column centerall m1">Romantique</p>
+                    </li>
+                    <li class="flex centerall filter">
+                        <div class="bg-blue-light flex-column centerall disc">
+                            <i class="fas fa-dog text-blue fontsize-2-5"></i>
+                        </div>
+                        <p class="fontsize-2-5 filter flex-column centerall m1">Animaux autorisés</p>
+                    </li>
                 </ul>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="flex info">
+                    <p><i class="fas fa-info-circle text-white bg-blue test"></i></p>
+                    <p class="fontsize-2-5"> Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+
                 <!------------------------>
                 <!-------- Lodging list -------->
                 <article>

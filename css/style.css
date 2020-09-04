@@ -1,7 +1,10 @@
 .text-blue {color: #0065FC;}
 .text-blue-light {color: #DEEBFF;}
-.text-gray {color: #1D1D1D;}
-.bg-gray {background-color: #F2F2F2;}
+.text-grey {color: #D9D9D9;}
+.text-white {color: white;}
+.bg-grey {background-color: #F2F2F2;}
+.bg-blue {background-color: #0065FC;}
+.bg-blue-light {background-color: #DEEBFF;}
 @font-face {
     font-family: "Raleway";
     src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
@@ -11,11 +14,46 @@ body {font-family: "Raleway";}
 li {list-style: none;}
 a {text-decoration: none;}
 .flex {display: flex;}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-wrap {flex-wrap: wrap;}
+.centerall {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .px-3 {
     padding-left: 3rem;
     padding-right: 3rem;
 }
 li > a {color: inherit; text-align: center;}
-.title {
-    font-size: 3.5em;
+.title {font-size: 3.5em;}
+.fontsize-2-5 {font-size: 2.5em;}
+.disc {
+    border-radius: 90px;
+    height: 6.4rem;
+    width: 6.4rem;
+    margin-right: -6rem;
+    z-index: 1000;
+}
+.filter {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;;
+}
+.filter p {
+    height: 6rem;
+    border-radius: 90px;
+    border: #D9D9D9 0.2rem solid;
+    padding-right: 2rem;
+    padding-left: 7rem;
+    margin-right: 2rem;
+}
+.m1 {
+    margin: rem 1rem 1rem 1rem;
+}
+.test {
+    border-radius: 90px;
 }
