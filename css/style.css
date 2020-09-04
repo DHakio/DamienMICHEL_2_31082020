@@ -1,0 +1,21 @@
+.text-blue {color: #0065FC;}
+.text-blue-light {color: #DEEBFF;}
+.text-gray {color: #1D1D1D;}
+.bg-gray {background-color: #F2F2F2;}
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+    font-weight: bold;
+}
+body {font-family: "Raleway";}
+li {list-style: none;}
+a {text-decoration: none;}
+.flex {display: flex;}
+.px-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+li > a {color: inherit; text-align: center;}
+.title {
+    font-size: 3.5em;
+}

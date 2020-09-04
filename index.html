@@ -2,142 +2,148 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/desktop.css" />
+        <link rel="stylesheet" href="./css/mobile.css" />
         <title>Reservia</title>
+        
     </head>
     <body>
-        <!-------- HEADER -------->
-        <header>
-            <img class="" src="" alt="Reservia">
-            <nav>
+        <div class="container">
+            <!-------- HEADER -------->
+            <header>
+                <div id="logo"></div>
+                <div id="subscribe">
+                    <a href="#" class="text-blue">S'inscrire</a>
+                </div>
+                <nav>
+                    <ul id="main_nav">
+                        <li class="actived-nav"><a href="#lodging">Hébergements</a></li>
+                        <li><a href="#activities">Activités</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!------------------------>
+            <main class="px-3">
+                <h1 id="lodging" class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h4 class="text-gray">En plein centre ville ou en pleine nature</h4>
+                <form action="#" method="get">
+                    <input type="text" id="location" name="location" value="Marseille, France">
+                    <input type="submit" value="Rechercher">
+                </form>
+                <p>Filtres</p>
                 <ul>
-                    <li><a href="#">S'inscrire</a></li>
-                    <li>
+                    <li>Économique</li>
+                    <li>Familial</li>
+                    <li>Romantique</li>
+                    <li>Animaux autorisés</li>
+                </ul>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <!------------------------>
+                <!-------- Lodging list -------->
+                <article>
+                    <h1>Hébergements à Marseile</h1>
+                    <section>
+                        <img src="#" alt="Auberge la Cannebière">
+                        <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <span>25€</span></p>
+                    </section>
+                    <section>
+                        <img src="#" alt="Auberge la Cannebière">
+                        <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <span>25€</span></p>
+                    </section>
+                    <section>
+                        <img src="#" alt="Auberge la Cannebière">
+                        <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <span>25€</span></p>
+                    </section>
+                    <section>
+                        <img src="#" alt="Auberge la Cannebière">
+                        <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <span>25€</span></p>
+                    </section>
+                    <section>
+                        <img src="#" alt="Auberge la Cannebière">
+                        <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <span>25€</span></p>
+                    </section>
+                    <section>
+                        <img src="#" alt="Auberge la Cannebière">
+                        <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <span>25€</span></p>
+                    </section>
+                    <a href="#">Afficher plus</a>
+                </article>
+                <aside>
+                    <h1>Les plus populaires</h1>
+                    <section>
+                        <img src="#" alt="Auberge la Cannebière">
+                        <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <span>25€</span></p>
+                    </section>
+                </aside>
+                <!------------------------>
+                <!-------- To do list -------->
+                <article id="activities">
+                    <section>
+                        <img src="#" alt="Vieux Port">
+                        <h3>Vieux Port</h3>
+                    </section>
+                    <section>
+                        <img src="#" alt="Vieux Port">
+                        <h3>Vieux Port</h3>
+                    </section>
+                    <section>
+                        <img src="#" alt="Vieux Port">
+                        <h3>Vieux Port</h3>
+                    </section>
+                    <section>
+                        <img src="#" alt="Vieux Port">
+                        <h3>Vieux Port</h3>
+                    </section>
+                    <section>
+                        <img src="#" alt="Vieux Port">
+                        <h3>Vieux Port</h3>
+                    </section>
+                    <section>
+                        <img src="#" alt="Vieux Port">
+                        <h3>Vieux Port</h3>
+                    </section>
+                </article>
+                <!------------------------>
+                <!-------- FOOTER -------->
+                <footer>
+                    <nav>
+                        <h3>A propos</h3>
                         <ul>
-                            <li><a href="#">Hébergements</a></li>
-                            <li><a href="#">Activités</a></li>
+                            <li><a href="#">Fonctionne du site</a></li>
+                            <li><a href="#">Conditions générales de ventes</a></li>
+                            <li><a href="#">Données et confidentialité</a></li>
                         </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!------------------------>
+                    </nav>
+                    <nav>
+                        <h3>Nos hébergements</h3>
+                        <ul>
+                            <li><a href="#">Charte qualité</a></li>
+                            <li><a href="#">Soumettre votre hôtel</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <h3>Assistance</h3>
+                        <ul>
+                            <li><a href="#">Centre d'aide</a></li>
+                            <li><a href="#">Nous contacter</a></li>
+                        </ul>
+                    </nav>
+                </footer>
+                <!------------------------>
+            </main>
+            
+    
 
-        <main>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <h4>En plein centre ville ou en pleine nature</h4>
-            <form action="#" method="get">
-                <input type="text" id="location" name="location" value="Marseille, France">
-                <input type="submit" value="Rechercher">
-            </form>
-            <p>Filtres</p>
-            <ul>
-                <li>Économique</li>
-                <li>Familial</li>
-                <li>Romantique</li>
-                <li>Animaux autorisés</li>
-            </ul>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            <!------------------------>
-            <!-------- Lodging list -------->
-            <article>
-                <h1>Hébergements à Marseile</h1>
-                <section>
-                    <img src="#" alt="Auberge la Cannebière">
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <span>25€</span></p>
-                </section>
-                <section>
-                    <img src="#" alt="Auberge la Cannebière">
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <span>25€</span></p>
-                </section>
-                <section>
-                    <img src="#" alt="Auberge la Cannebière">
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <span>25€</span></p>
-                </section>
-                <section>
-                    <img src="#" alt="Auberge la Cannebière">
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <span>25€</span></p>
-                </section>
-                <section>
-                    <img src="#" alt="Auberge la Cannebière">
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <span>25€</span></p>
-                </section>
-                <section>
-                    <img src="#" alt="Auberge la Cannebière">
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <span>25€</span></p>
-                </section>
-                <a href="#">Afficher plus</a>
-            </article>
-            <aside>
-                <h1>Les plus populaires</h1>
-                <section>
-                    <img src="#" alt="Auberge la Cannebière">
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <span>25€</span></p>
-                </section>
-            </aside>
-            <!------------------------>
-            <!-------- To do list -------->
-            <article>
-                <section>
-                    <img src="#" alt="Vieux Port">
-                    <h3>Vieux Port</h3>
-                </section>
-                <section>
-                    <img src="#" alt="Vieux Port">
-                    <h3>Vieux Port</h3>
-                </section>
-                <section>
-                    <img src="#" alt="Vieux Port">
-                    <h3>Vieux Port</h3>
-                </section>
-                <section>
-                    <img src="#" alt="Vieux Port">
-                    <h3>Vieux Port</h3>
-                </section>
-                <section>
-                    <img src="#" alt="Vieux Port">
-                    <h3>Vieux Port</h3>
-                </section>
-                <section>
-                    <img src="#" alt="Vieux Port">
-                    <h3>Vieux Port</h3>
-                </section>
-            </article>
-            <!------------------------>
-        </main>
-        
-
-        <!-------- FOOTER -------->
-        <footer>
-            <nav>
-                <h3>A propos</h3>
-                <ul>
-                    <li><a href="#">Fonctionne du site</a></li>
-                    <li><a href="#">Conditions générales de ventes</a></li>
-                    <li><a href="#">Données et confidentialité</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <h3>Nos hébergements</h3>
-                <ul>
-                    <li><a href="#">Charte qualité</a></li>
-                    <li><a href="#">Soumettre votre hôtel</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <h3>Assistance</h3>
-                <ul>
-                    <li><a href="#">Centre d'aide</a></li>
-                    <li><a href="#">Nous contacter</a></li>
-                </ul>
-            </nav>
-        </footer>
-        <!------------------------>
+            
+        </div>
+    
     </body>
 </html>
