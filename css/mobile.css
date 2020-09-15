@@ -1,5 +1,14 @@
 @media screen and (max-width: 1024px) {
 
+    .container {
+        width: 90%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
     /* HEADER */
     #nav-header {
         position: sticky;
@@ -62,6 +71,9 @@
         width: 8.4rem;
         border: none;
         border-radius: 30px;
+    }
+    button[type="submit"] span {
+        display: none;
     }
     ul > li > div {
         margin-left: -0.5rem;

@@ -1,13 +1,6 @@
 li {list-style: none;}
 a {text-decoration: none;}
 li > a {color: inherit; text-align: center;}
-.container {
-    width: 90%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 /* ******************************************************** */
 /*                          FLEX BOX                        */
@@ -133,3 +126,8 @@ body {font-family: "Raleway";}
 
 /* ******************************************************** */
 /* ******************************************************** */
+
+
+.w100 {
+    width: 100%;
+}
