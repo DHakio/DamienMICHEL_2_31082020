@@ -1,73 +1,126 @@
-.text-blue {color: #0065FC;}
-.text-blue-light {color: #DEEBFF;}
-.text-grey {color: #a0a0a0;}
-.text-grey-light {color: #F2F2F2;}
-.text-white {color: white;}
-.text-black {color: black;}
-.bg-grey {background-color: #F2F2F2;}
-.bg-blue {background-color: #0065FC;}
-.bg-blue-light {background-color: #DEEBFF;}
-@font-face {
-    font-family: "Raleway";
-    src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
-    font-weight: bold;
-}
-body {font-family: "Raleway";}
 li {list-style: none;}
 a {text-decoration: none;}
+li > a {color: inherit; text-align: center;}
+.container {
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* ******************************************************** */
+/*                          FLEX BOX                        */
+/* ******************************************************** */
+
 .flex {display: flex;}
 .flex-column {
     display: flex;
     flex-direction: column;
 }
+
 .flex-space-between {justify-content: space-between;}
+
 .flex-wrap {flex-wrap: wrap;}
+
 .flex-grow {flex-grow: 1;}
-.self-end {
-    align-self: flex-end;
-}
+
+.items-center {align-items: center;}
+
+.self-end {align-self: flex-end;}
+
+.content-start {justify-content: flex-start;}
+.content-center {justify-content: center}
+.content-end{justify-content: flex-end;}
+
 .centerall {
     align-content: center;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.center-x {
-    justify-content: center
+
+/* ******************************************************** */
+/* ******************************************************** */
+
+
+
+/* ******************************************************** */
+/*                          COLOR                           */
+/* ******************************************************** */
+
+.text-blue {color: #0065FC;}
+.text-blue-light {color: #DEEBFF;}
+.text-grey {color: #707070;}
+.text-grey-light {color: #F2F2F2;}
+.text-white {color: white;}
+.text-black {color: black;}
+
+.bg-grey {background-color: #F2F2F2;}
+.bg-blue {background-color: #0065FC;}
+.bg-blue-light {background-color: #DEEBFF;}
+.bg-white {background-color: white;}
+
+/* ******************************************************** */
+/* ******************************************************** */
+
+
+
+
+/* ******************************************************** */
+/*                          FONTS                           */
+/* ******************************************************** */
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
 }
-li > a {color: inherit; text-align: center;}
-.title {font-size: 3.5rem;}
-.fontsize-3 {font-size: 3em;}
-.fontsize-2-5 {font-size: 2.5em;}
-.fontsize-2 {font-size: 2em;}
-.fontsize-1-5 {font-size: 1.5em;}
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+    font-weight: bold;
+}
+
+body {font-family: "Raleway";}
+
+.font-bold {font-weight: bold;}
+.font-normal {font-weight: normal;}
+
 .fontsize-1 {font-size: 1em;}
-.disc {
-    border-radius: 90px;
-    height: 8rem;
-    width: 8rem;
-    margin-right: -6rem;
-    z-index: 500;
+.fontsize-1-5 {font-size: 1.5em;}
+.fontsize-2 {font-size: 2em;}
+.fontsize-2-5 {font-size: 2.5em;}
+.fontsize-3 {font-size: 3em;}
+.fontsize-3-5 {font-size: 3.5em;}
+
+/* ******************************************************** */
+/* ******************************************************** */
+
+
+/* ******************************************************** */
+/*                          PADDING                         */
+/* ******************************************************** */
+
+.py-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
-.filter {
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;;
-}
-.filter p {
-    height: 7.2rem;
-    border-radius: 90px;
-    border: #D9D9D9 0.4rem solid;
-    padding-right: 3rem;
-    padding-left: 8rem;
-}
-.info-icon {
-    border-radius: 90px;
-    font-size: 4rem;
-    margin-right: 2rem;
-}
-.info-text {
-    margin-top: 1.4rem;
-}
+.pl-2 {padding-left: 2rem;}
+
+
+.pr-1-5 {padding-right: 1.5rem;}
+.pr-3 {padding-right: 3rem;}
+.pr-5 {padding-right: 5rem;}
+
+
+/* ******************************************************** */
+/* ******************************************************** */
+
+
+/* ******************************************************** */
+/*                          MARGIN                          */
+/* ******************************************************** */
+
 .my-1 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -76,10 +129,7 @@ li > a {color: inherit; text-align: center;}
     margin-top: 6rem;
     margin-bottom: 6rem;
 }
-.py-3 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-.pl-2 {
-    padding-left: 2rem;
-}
+
+
+/* ******************************************************** */
+/* ******************************************************** */

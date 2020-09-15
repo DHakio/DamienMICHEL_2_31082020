@@ -11,70 +11,70 @@
     </head>
     <body>
         <!-- ------ HEADER ------ -->
-        <header id="nav-header">
+        <header id="nav-header" class="flex flex-wrap flex-space-between bg-white">
             <div id="logo"></div>
-            <div id="subscribe">
-                <a href="#" class="text-blue">S'inscrire</a>
+            <div id="subscribe" class="flex content-end items-center pr-1-5">
+                <a href="#" class="text-blue font-bold fontsize-2-5">S'inscrire</a>
             </div>
             <nav>
-                <ul id="main_nav">
-                    <li class="actived-nav"><a href="#lodging">Hébergements</a></li>
-                    <li><a href="#activities" class="text-grey">Activités</a></li>
+                <ul id="main_nav" class="flex fontsize-2-5">
+                    <li class="actived-nav flex centerall"><a href="#lodging">Hébergements</a></li>
+                    <li class="flex centerall"><a href="#activities" class="text-grey">Activités</a></li>
                 </ul>
             </nav>
         </header>
         <!-- -------------------- -->
-        <main class="flex flex-column center-x">
-            <div class="container">
-                <h1 id="lodging" class="title self-left">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <h2 class="text-grey">En plein centre ville ou en pleine nature</h2>
-                <form action="#" method="get" class="flex center-x">
-                    <div class="bg-grey flex-column centerall">
+        <main id="lodging" class="flex-column content-center">
+            <div class="container" >
+                <h1 class="fontsize-3-5">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h2 class="text-grey font-normal">En plein centre ville ou en pleine nature</h2>
+                <form action="#" method="get" class="flex content-center">
+                    <div class="bg-grey flex-column centerall fontsize-3">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <input type="text" id="location" name="location" value="Marseille, France">
+                    <input type="text" id="location" class="font-bold fontsize-3 flex-grow" name="location" value="Marseille, France">
                     <button type="submit" class="bg-blue">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search fontsize-2-5 text-white"></i>
                     </button>
                 </form>
-                <p class="fontsize-3">Filtres</p>
+                <p class="fontsize-3 font-bold">Filtres</p>
                 <ul class="flex flex-wrap flex-space-between">
                     <li class="flex centerall filter">
                         <div class="bg-blue-light flex-column centerall disc">
                             <i class="fas fa-money-bill-wave text-blue fontsize-3"></i>
                         </div>
-                        <p class="fontsize-2-5 filter flex-column centerall">Économique</p>
+                        <p class="fontsize-2-5 filter flex-column centerall font-bold pr-3">Économique</p>
                     </li>
                     <li class="flex centerall filter">
                         <div class="bg-blue-light flex-column centerall disc">
                             <i class="fas fa-child text-blue fontsize-3"></i>
                         </div>
-                        <p class="fontsize-2-5 filter flex-column centerall">Familial</p>
+                        <p class="fontsize-2-5 filter flex-column centerall font-bold pr-3">Familial</p>
                     </li>
                     <li class="flex centerall filter">
                         <div class="bg-blue-light flex-column centerall disc">
                             <i class="fas fa-heart text-blue fontsize-3"></i>
                         </div>
-                        <p class="fontsize-2-5 filter flex-column centerall">Romantique</p>
+                        <p class="fontsize-2-5 filter flex-column centerall font-bold pr-3">Romantique</p>
                     </li>
                     <li class="flex centerall filter">
                         <div class="bg-blue-light flex-column centerall disc">
                             <i class="fas fa-dog text-blue fontsize-3"></i>
                         </div>
-                        <p class="fontsize-2-5 filter flex-column centerall">Animaux autorisés</p>
+                        <p class="fontsize-2-5 filter flex-column centerall font-bold pr-3">Animaux autorisés</p>
                     </li>
                 </ul>
                 <div class="flex">
-                    <p><i class="fas fa-info-circle text-white bg-blue info-icon"></i></p>
-                    <p class="fontsize-2-5 info-text fontsize-2"> Plus de 500 logements sont disponibles dans cette ville</p>
+                    <p><i class="fas fa-info-circle text-white bg-blue info-icon fontsize-3-5"></i></p>
+                    <p class="info-text fontsize-2-5 font-bold text-grey"> Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>
             <!-- ------ Lodging list ------ -->
             <article id="lodging-article" class="container">
-                <h1 class="title">Hébergements à Marseille</h1>
-                <section class="flex flex-column">
+                <h1 class="fontsize-3-5">Hébergements à Marseille</h1>
+                <section class="flex-column">
                     <img src="./image/Lodging/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
-                    <div class="flex flex-column flex-grow">
+                    <div class="flex-column flex-grow">
                         <h2 class="fontsize-2-5 my-1">Auberge la Cannebière</h2>
                         <p class="fontsize-2 my-1">Nuit à partir de <span>25€</span></p>
                         <p class="fontsize-2 my-1">
@@ -86,9 +86,9 @@
                         </p>
                     </div>
                 </section>
-                <section class="flex flex-column">
+                <section class="flex-column">
                     <img src="./image/Lodging/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
-                    <div class="flex flex-column flex-grow">
+                    <div class="flex-column flex-grow">
                         <h2 class="fontsize-2-5 my-1">Hôtel du port</h2>
                         <p class="fontsize-2 my-1">Nuit à partir de <span>52€</span></p>
                         <p class="fontsize-2 my-1">
@@ -100,7 +100,7 @@
                         </p>
                     </div>
                 </section>
-                <section class="flex flex-column">
+                <section class="flex-column">
                     <img src="./image/Lodging/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
                     <div class="flex flex-column flex-grow">
                         <h2 class="fontsize-2-5 my-1">Hôtel Les mouettes</h2>
@@ -114,9 +114,9 @@
                         </p>
                     </div>
                 </section>
-                <section class="flex flex-column">
+                <section class="flex-column">
                     <img src="./image/Lodging/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
-                    <div class="flex flex-column flex-grow">
+                    <div class="flex-column flex-grow">
                         <h2 class="fontsize-2-5 my-1">Hôtel de la mer</h2>
                         <p class="fontsize-2 my-1">Nuit à partir de <span>46€</span></p>
                         <p class="fontsize-2 my-1">
@@ -128,9 +128,9 @@
                         </p>
                     </div>
                 </section>
-                <section class="flex flex-column">
+                <section class="flex-column">
                     <img src="./image/Lodging/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
-                    <div class="flex flex-column flex-grow">
+                    <div class="flex-column flex-grow">
                         <h2 class="fontsize-2-5 my-1">Auberge Le Panier</h2>
                         <p class="fontsize-2 my-1">Nuit à partir de <span>23€</span></p>
                         <p class="fontsize-2 my-1">
@@ -142,9 +142,9 @@
                         </p>
                     </div>
                 </section>
-                <section class="flex flex-column">
+                <section class="flex-column">
                     <img src="./image/Lodging/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
-                    <div class="flex flex-column flex-grow">
+                    <div class="flex-column flex-grow">
                         <h2 class="fontsize-2-5 my-1">Hôtel chez Amina</h2>
                         <p class="fontsize-2 my-1">Nuit à partir de <span>96€</span></p>
                         <p class="fontsize-2 my-1">
@@ -156,11 +156,11 @@
                         </p>
                     </div>
                 </section>
-                <p class="my-6"><a class="text-black fontsize-2" href="#">Afficher plus</a></p>
+                <p class="my-6"><a class="text-black fontsize-2 font-bold" href="#">Afficher plus</a></p>
             </article>
             <aside id="lodging-aside" class="bg-grey">
                 <div class="container">
-                    <h1 class="title flex flex-space-between">Les plus populaires <span class="fas fa-chart-line "></span></h1>
+                    <h1 class="fontsize-3-5 flex flex-space-between">Les plus populaires <span class="fas fa-chart-line "></span></h1>
                     <section class="flex">
                         <img src="./image/Lodging/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                         <div class="flex flex-wrap p1 flex-grow">
@@ -208,28 +208,28 @@
             <!-- -------------------- -->
             <!-- ------ To do list ------ -->
             <article id="activities" class="container">
-                <h2 class="title">Activités à Marseille</h2>
-                <section class="flex flex-column">
+                <h2 class="fontsize-3-5">Activités à Marseille</h2>
+                <section class="flex-column">
                     <img src="./image/Activities/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                     <h3 class="fontsize-2-5">Vieux Port</h3>
                 </section>
-                <section class="flex flex-column">
+                <section class="flex-column">
                     <img src="./image/Activities/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                     <h3 class="fontsize-2-5">Fort de Pomègues</h3>
                 </section>
-                <section class="flex flex-column">
+                <section class="flex-column">
                     <img src="./image/Activities/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                     <h3 class="fontsize-2-5">Îles du Frioul</h3>
                 </section>
-                <section class="flex flex-column">
+                <section class="flex-column">
                     <img src="./image/Activities/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                     <h3 class="fontsize-2-5">Parc National des Calanques</h3>
                 </section>
-                <section class="flex flex-column">
+                <section class="flex-column">
                     <img src="./image/Activities/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                     <h3 class="fontsize-2-5">Notre-Dame-de-la-Garde</h3>
                 </section>
-                <section class="flex flex-column">
+                <section class="flex-column">
                     <img src="./image/Activities/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                     <h3 class="fontsize-2-5">Parc Longchamp</h3>
                 </section>
@@ -239,7 +239,7 @@
         </main>
         <!-- ------ FOOTER ------ -->
         <footer class="bg-grey py-3 pl-2">
-            <div class="container flex flex-column fontsize-2">
+            <div class="container flex-column fontsize-2">
                 <nav>
                     <h3>A propos</h3>
                     <ul>
