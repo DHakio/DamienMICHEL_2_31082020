@@ -1,0 +1,91 @@
+@media screen and (min-width: 1024px) {
+    
+    BODY {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #logo {
+        background-image: url("../image/Reservia.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 15em;
+        height: 7em;
+        order: 1;
+        align-self: flex-end;
+        margin-right: auto;
+    }
+    
+    #nav-header {
+        margin: 0 0 0 0;
+        font-size: 0.5em!important;
+        justify-content: flex-start!important;
+        width: 100%;
+        
+    }
+    #subscribe {
+        order: 3;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #nav-header nav {
+        order: 2;
+    }
+    .actived-nav {
+        color: #0065FC !important;
+        border-top: solid #0065FC 0.2rem !important;
+    }
+
+    #main-nav{
+        margin-block-start: 0!important;
+        height: 100%;
+    }
+
+    #main-nav li {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
