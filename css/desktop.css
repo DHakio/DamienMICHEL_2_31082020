@@ -1,7 +1,8 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 993px) {
     
     BODY {
-        width: 70%;
+        padding-left: 1vw;
+        padding-right: 1vw;
         margin-left: auto;
         margin-right: auto;
     }
@@ -11,8 +12,8 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        width: 15em;
-        height: 7em;
+        width: 7vw;
+        height: 6vw;
         order: 1;
         align-self: flex-end;
         margin-right: auto;
@@ -20,80 +21,76 @@
     
     #nav-header {
         margin: 0 0 0 0;
-        font-size: 0.4em!important;
+        font-size: 0.5vw!important;
         justify-content: flex-start!important;
         width: 100%;
-        
     }
     #subscribe {
         order: 3;
-        padding-top: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-top: 1.5vw;
+        padding-left: 1.5vw;
     }
     #nav-header nav {
         order: 2;
     }
     .actived-nav {
         color: #0065FC !important;
-        border-top: solid #0065FC 0.2rem !important;
+        border-top: solid #0065FC 0.1vw !important;
     }
-
     #main-nav{
         margin-block-start: 0!important;
         height: 100%;
     }
-
     #main-nav li {
-        padding-top: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-top: 1.7vw;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
     }
 
 
 
     .fontsize-3-5 {
-        font-size: 1.5em!important;
+        font-size: 1.5vw!important;
     }
 
     .fontsize-1-5 {
-        font-size: 1em!important;
+        font-size: 1vw!important;
     }
     .fontsize-3 {
-        font-size: 1.4em!important;
+        font-size: 1.2vw!important;
     }
 
 
 
     form {
-        margin-top: 1.5em;
-        margin-bottom: 2em;
-        width: 27rem;
+        margin-top: 1.5vw;
+        margin-bottom: 2vw;
+        width: 27vw;
     }
     form div.bg-grey {
-        height: 2.9rem;
-        width: 2.9rem;
-        border-radius: 1rem 0 0 1rem;
-        font-size: 1rem!important;
+        height: 2.9vw;
+        width: 2.9vw;
+        border-radius: 1vw 0 0 1vw;
+        font-size: 1rvw!important;
     }
     #location {
-        height: 2.6rem;
-        width: 15rem;
-        padding-left: 1em;
-        border: solid #F2F2F2 0.1rem;
+        height: 2.6vw;
+        width: 15vw;
+        padding-left: 1vw;
+        border: solid #F2F2F2 0.1vw;
         flex-grow: unset;
-        font-size: 1rem!important;
+        font-size: 1.3vw!important;
     }
     button[type="submit"] {
-        height: 2.9rem;
+        height: 2.9vw;
         border: none;
-        border-radius: 0 1rem 1rem 0;
+        border-radius: 0 1vw 1vw 0;
     }
     button[type="submit"] span {
         font-family: Raleway;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        font-size: 1rem!important;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+        font-size: 1vw!important;
     }
     button[type="submit"] i {
         display: none;
@@ -103,16 +100,16 @@
 
     .disc {
         border-radius: 90px;
-        height: 3.1rem;
-        width: 3.1rem;
-        margin-right: -4.6rem;
+        height: 3.1vw;
+        width: 3.1vw;
+        margin-right: -4.6vw;
         z-index: 500;
-        font-size: 0.8rem!important;
+        font-size: 0.8vw!important;
     }
     .filter {
-        margin-bottom: 0.5rem;
-        margin-top: 0.5rem;;
-        margin-left: 1.5rem;
+        margin-bottom: 0.5vw;
+        margin-top: 0.5vw;;
+        margin-left: 1.5vw;
     }
     .filter-list {
         justify-content: flex-start;
@@ -121,31 +118,28 @@
     .filter-list p {
         width: auto;
         align-self: center;
-        font-size: 1rem!important;
+        font-size: 1vw!important;
     }
     .filter p {
-        height: 2.8rem;
+        height: 2.8vw;
         border-radius: 90px;
-        border: #D9D9D9 0.15rem solid;
-        padding-left: 4rem;
-        padding-right: 1.5rem;
-        font-size: 1.4rem;
+        border: #D9D9D9 0.15vw solid;
+        padding-left: 4vw;
+        padding-right: 1.5vw;
+        font-size: 1.4vw;
     }
     ul {
         padding-left: 0;
     }
 
-
-
     .info-icon {
         border-radius: 90px;
-        margin-right: 0.8rem;
-        border: 5px red;
+        margin-right: 0.8vw;
     }
     .info-text {
-        margin-top: 1.2rem;
-        font-size: 1rem;
+        font-size: 1vw;
         font-weight: normal;
+        text-align: center;
     }
 
 
@@ -155,19 +149,169 @@
 
 
 
+    /* LODGING ARTICLE */
+    #lodging-article {
+        padding-top: 1.5vw;
+        width:  60vw;
+        background-color: #F2F2F2;
+        padding-left: 2.5vw;
+        border-radius: 1.5vw;
+        padding-right: 2.5vw;
+        padding-bottom: 2.6vw;
+    }
+    #lodging-article h1 {
+        margin-bottom: 0;
+    }
+    #lodging-article > p{
+        font-size: 0.6vw;
+        margin: 0;
+        margin-top: 2.6vw;
+
+    }
+    #lodging-article > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #lodging-article section {
+        background-color: white;
+        height: 14vw;
+        width: 18vw;
+        border-radius: 1.5vw;
+        padding: 0.3vw 0.3vw;
+        margin-top: 2vw;
+        -webkit-box-shadow: 0px 0px 1.5vw 0 rgba(0,0,0,0.10);
+        -moz-box-shadow: 0px 0px 1.5vw 0 rgba(0,0,0,0.10);
+        box-shadow: 0px 0px 1.5vw 0 rgba(0,0,0,0.10);
+    }
+    #lodging-article section img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 1.5vw 1.5vw 0 0;
+    }
+    #lodging-article section div {
+        font-size: 0.45vw;
+        padding-left: 1vw;
+        padding-top: 1vw;
+
+    }
+
+    #lodging-article section div * {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #lodging-article section div p {
+        margin-top: 0.2vw;
+    }
+    
+    /* *************** */
 
 
+    /* LODGING ASIDE */
+    #lodging-aside {
+        padding-top: 1.5vw;
+        width: 23vw;
+        padding-left: 2.5vw;
+        border-radius: 1.5vw;
+        padding-right: 2.5vw;
+    }
+    #lodging-aside section {
+        background-color: white;
+        height:9vw;
+        border-radius: 1.5vw;
+        padding: 0.3vw 0.3vw;
+        margin-top: 2vw;
+        -webkit-box-shadow: 0px 0px 1.5vw 0 rgba(0,0,0,0.10);
+        -moz-box-shadow: 0px 0px 1.5vw 0 rgba(0,0,0,0.10);
+        box-shadow: 0px 0px 1.5vw 0 rgba(0,0,0,0.10);
+    }
+    #lodging-aside section img {
+        width: 40%;
+        object-fit: cover;
+        border-radius: 1.5vw 0 0 1.5vw;
+    }
+    #lodging-aside section div {
+        font-size: 0.45vw;
+        padding-left: 1vw;
+        flex-direction: column;
+    }
 
+    #lodging-aside section div * {
+        margin-top: 0.5vw;
+        margin-bottom: 0;
+    }
+    #lodging-aside section div p {
+        align-self: flex-start;
+    }
+    /* ************* */
 
+    /* ACTIVITIES */
+    #activities {
+        padding-top: 3vw;
+        padding-bottom: 2.6vw;
+    }
+    #activities h2 {
+        margin-bottom: 0;
+    }
+    #activities > div {
+        height: 34vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #activities section {
+        background-color: white;
+        width: 21.3vw;
+        border-radius: 1.5vw;
+        margin-top: 2vw;
+        -webkit-box-shadow: 0px 0px 1.5vw 0 rgba(0,0,0,0.10);
+        -moz-box-shadow: 0px 0px 1.5vw 0 rgba(0,0,0,0.10);
+        box-shadow: 0px 0px 1.5vw 0 rgba(0,0,0,0.10);
+    }
+    #activities section img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1.5vw 1.5vw 0 0;
+    }
+    #activities section h3 {
+        font-size: 1.1vw;
+        padding-left: 1.5vw;
+        max-height: 2vw;
 
+    }
+    .img-big {
+        height: 25.5vw;
+    }
+    .img-medium {
+        height: 13vw;
+    }
+    .img-small {
+        height: 7vw;
+    }
 
-
-
-
-
-
-
-
-
-
+    footer {
+        padding:3vw 0 3vw 3vw!important ;
+    }
+    footer > div {
+        flex-direction: row!important;
+        justify-content: space-between;
+        width: 80%;
+    }
+    footer h3 {
+        font-size: 1.5vw;
+        margin-top: 0;
+        margin-bottom: 0.8vw;
+    }
+    footer a {
+        font-size: 1vw;
+        margin: 0!important;
+    }
+    footer ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    footer ul li {
+        line-height: 1.3vw;
+    }
 }
