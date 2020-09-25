@@ -1,4 +1,4 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-device-width: 480px) {
 
     .container {
         width: 90%;
@@ -8,89 +8,76 @@
         margin-left: auto;
     }
 
+    .m-main {
+        overflow: scroll;
+        height: 100%;
+    }
 
     /* HEADER */
-    #nav-header {
+    .m-sticky-top {
         position: sticky;
         top: 0;
         z-index: 1000;
     }
-    main {
-        overflow: scroll;
-        height: 100%;
-    }
-    #logo {
-        background-image: url("../image/Reservia.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+    .m-sticky-top #logo {
         width: 35%;
         height: 8em;
     }
-    #subscribe {
+    .m-sticky-top #subscribe {
         width: 50%;
     }
-    #nav-header nav {
+    .m-sticky-top nav {
         width: 100%;
         padding-top: 1em;
     }
-    #main-nav li {
+    .m-sticky-top li {
         width: 50%;
         border-bottom: solid #F2F2F2 0.5rem;
         padding-bottom: 0.8em;
     }
-    .actived-nav {
-        color: #0065FC !important;
-        border-bottom: solid #0065FC 0.5rem !important;
+    .m-sticky-top .actived-nav {
+        border-bottom: solid #0065FC 0.5rem;
     }
     /* ****** */
 
-
-    main > h2 {
-        margin-top: -0.3em;
-    }
-    form {
+    /* LOCATION INPUT */
+    .location-input {
         margin-top: 4em;
         margin-bottom: 2em;
         width: 100%;
     }
-    form div.bg-grey {
+    .location-input div.bg-grey {
         height: 8.3rem;
         width: 8.4rem;
         border-radius: 30px 0 0 30px;
     }
-    #location {
+    .location-input #location {
         height: 7.8rem;
         width: 60%;
         padding-left: 1em;
-        border: solid #F2F2F2 0.2rem;
+        border-width: 0.2rem!important;
         margin-right: -2rem;
     }
-    button[type="submit"] {
+    .location-input button[type="submit"] {
         height: 8.4rem;
         width: 8.4rem;
         border: none;
         border-radius: 30px;
     }
-    button[type="submit"] span {
-        display: none;
+    /* **************** */
+
+    /* FILTER LIST */
+    .filter-list li:nth-child(1) {width: 100%;}
+    .filter {
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;;
     }
-    ul > li > div {
-        margin-left: -0.5rem;
-    }
-    ul {
-        padding-left: 0;
-    }
-    .disc {
+    .filter div {
         border-radius: 90px;
         height: 8rem;
         width: 8rem;
         margin-right: -8rem;
         z-index: 500;
-    }
-    .filter {
-        margin-bottom: 0.5rem;
-        margin-top: 0.5rem;;
     }
     .filter p {
         height: 7.2rem;
@@ -98,6 +85,8 @@
         border: #D9D9D9 0.4rem solid;
         padding-left: 8rem;
     }
+    /* *********** */
+
     .info-icon {
         border-radius: 90px;
         margin-right: 1.5rem;
@@ -106,7 +95,6 @@
 
     /* LODGING ASIDE */
     #lodging-aside {
-        order: 1;
         margin-top: 2em;
         padding-top: 3em;
         padding-bottom: 5em;
@@ -117,9 +105,6 @@
         border-radius: 3rem;
         padding: 0.6em 0.6em;
         margin-top: 2em;
-        -webkit-box-shadow: 0px 0px 1.5em 0 rgba(0,0,0,0.10);
-        -moz-box-shadow: 0px 0px 1.5em 0 rgba(0,0,0,0.10);
-        box-shadow: 0px 0px 1.5em 0 rgba(0,0,0,0.10);
     }
     #lodging-aside section img {
         width: 40%;
@@ -131,12 +116,13 @@
         padding-left: 3rem;
         padding-right: 5rem;
     }
+    #lodging-aside section div h2 {margin-top: 0;}
+    #lodging-aside section div p {margin-top: -5rem;}
     /* ************* */
 
 
     /* LODGING ARTICLE */
     #lodging-article {
-        order: 2;
         padding-top: 3em;
     }
     #lodging-article section {
@@ -145,9 +131,6 @@
         border-radius: 3rem;
         padding: 0.6em 0.6em;
         margin-top: 2em;
-        -webkit-box-shadow: 0px 0px 1.5em 0 rgba(0,0,0,0.10);
-        -moz-box-shadow: 0px 0px 1.5em 0 rgba(0,0,0,0.10);
-        box-shadow: 0px 0px 1.5em 0 rgba(0,0,0,0.10);
     }
     #lodging-article section img {
         width: 100%;
@@ -160,14 +143,19 @@
         padding-left: 3rem;
         padding-right: 5rem;
     }
+    #lodging-article section div * {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    #lodging-article > p{
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
     /* *************** */
 
 
     /* ACTIVITIES */
-    #activities {
-        order: 3;
-        padding-bottom: 8rem;
-    }
+    #activities {padding-bottom: 8rem;}
     #activities h2 {
         margin-bottom: 2em;
     }
@@ -176,9 +164,6 @@
         height: 30rem;
         border-radius: 3rem;
         margin-top: 3em;
-        -webkit-box-shadow: 0px 0px 1.5em 0 rgba(0,0,0,0.10);
-        -moz-box-shadow: 0px 0px 1.5em 0 rgba(0,0,0,0.10);
-        box-shadow: 0px 0px 1.5em 0 rgba(0,0,0,0.10);
     }
     #activities section img {
         width: 100%;
@@ -193,6 +178,11 @@
     /* ********** */
 
 
+    footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 2rem;
+    }
     /* FIX ANCRE PROBLEME WITH STICKY NAV */
     main:target {
         padding-top: 30em;
@@ -204,4 +194,28 @@
     }
     /* *************** */
 
+    /* MOBILE ORDER */
+    .m-order-1 {order: 1;}
+    .m-order-2 {order: 2;}
+    .m-order-3 {order: 3;}
+    /* ************ */
+
+    /* MOBILE FONTSIZE */
+    .m-fontsize-1 {font-size: 1em;}
+    .m-fontsize-1-5 {font-size: 1.5em;}
+    .m-fontsize-2 {font-size: 2em;}
+    .m-fontsize-2-5 {font-size: 2.5em;}
+    .m-fontsize-3 {font-size: 3em;}
+    .m-fontsize-3-5 {font-size: 3.5em;}
+    /* *************** */
+
+    .display {display: none;}
+
+    /* MOBILE FLEX */
+    .m-flex-grow {flex-grow: 1;}
+    .m-content-space-between {justify-content: space-between;}
+    .m-flex-row {flex-direction: row;}
+    .m-flex-column {flex-direction: column;}
+    .m-self-end { align-self: flex-end;}
+    /* ********** */
 }
