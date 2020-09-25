@@ -67,7 +67,11 @@
     /* **************** */
 
     /* FILTER LIST */
-    .filter-list li:nth-child(1) {width: 100%;}
+    .filter-list li:nth-child(1) {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
     .filter {
         margin-bottom: 0.5rem;
         margin-top: 0.5rem;;
