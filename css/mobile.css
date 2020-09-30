@@ -1,5 +1,9 @@
 @media screen and (max-device-width: 480px) {
 
+    BODY {
+        margin: 0;
+    }
+
     .container {
         width: 90%;
         padding-left: 15px;

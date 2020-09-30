@@ -35,7 +35,7 @@
 
 
 /* ******************************************************** */
-/*                          COLOR                           */
+/*                          COLORS                          */
 /* ******************************************************** */
 
 .text-blue {color: #0065FC;}
@@ -112,5 +112,9 @@ li > a {text-align: center;}
 #subscribe {padding-right: 1.5rem;}
 
 .filter p {padding-right: 3rem;}
+.filter p:hover {
+    color: #0065FC;
+    border-color: #DEEBFF;
+}
 
 ul {padding-left: 0;}
