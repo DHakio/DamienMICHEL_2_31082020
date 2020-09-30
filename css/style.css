@@ -102,6 +102,7 @@ li > a {text-align: center;}
 .actived-nav {color: #0065FC !important;}
 
 .location-input #location {border: solid #F2F2F2;}
+.location-input #location:focus {outline: none;}
 
 .box-shadow {
     -webkit-box-shadow: 0px 0px 1.5vw 0 rgba(0,0,0,0.10);
